@@ -8,8 +8,8 @@ const route = require("./routes");
 // Connect database
 db.connect();
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.json({ limit: "300mb" }));
+app.use(express.urlencoded({ extended: false, limit: "300mb" }));
 app.use(cors());
 app.options("*", cors());
 // Routes init
