@@ -1,7 +1,7 @@
 {
     "name": "server",
     "version": "1.0.0",
-    "description": "Server API about Race F1",
+    "description": "Server API for Race F1",
     "main": "index.js",
     "engines": {
         "node": "18.x"
